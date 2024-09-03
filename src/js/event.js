@@ -18,6 +18,11 @@ const eventsTemplate = arrayEvents => {
 export async function renderEvent(page, value) {
   try {
     const arrayEvent = await fetchData(page, value);
+    if (!arrayEvent.page.totalElements) {
+      alert('Try again!');
+      return;
+    }
+
     if (page === 1) {
       reset(arrayEvent.page.totalElements);
     }
