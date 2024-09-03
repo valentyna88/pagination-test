@@ -1,6 +1,7 @@
 import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
 import { renderEvent } from './event';
+import { value } from './search-form';
 
 const options = {
   totalItems: 0,
@@ -37,5 +38,5 @@ export function reset(totalItems) {
 pagination.on('afterMove', event => {
   const currentPage = event.page;
   console.log(currentPage);
-  renderEvent(currentPage);
+  renderEvent(currentPage, value);
 });
