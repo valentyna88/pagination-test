@@ -11,6 +11,5 @@ export async function fetchData(page) {
     },
   };
   const response = await axios.get('events.json', asyncParams);
-  console.log(response);
-  return response;
+  return response.data;
 }
