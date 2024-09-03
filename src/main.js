@@ -4,3 +4,6 @@
 // tui - pagination(https://www.npmjs.com/package/tui-pagination),
 // Запити робимо використовуючи бібліотеку axios (https://www.npmjs.com/package/axios , https://axios-http.com/uk/docs/intro)
 // і конструкції async\await; try\catch
+
+import './js/api';
+import './js/event';
